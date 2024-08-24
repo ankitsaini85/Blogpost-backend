@@ -10,7 +10,7 @@ server.listen(port,(req,res)=>{
 server.use(cors());
 
 server.get('/',(req,res)=>{
-    res.send("hello world")
+    res.send("hello world !!!!!!!!!!!")
 })
 server.get('/blogs',(req,res)=>{
     blogpost.find().sort({createdAt:-1})
