@@ -1,16 +1,5 @@
 const mongoose=require('mongoose');
-const username = "ankit_saini85";
-const password = "ankit7500057688";
-const dbname = "merndb1";
-const dburl=`mongodb+srv://${username}:${password}@merncluster.2k4wx.mongodb.net/${dbname}?retryWrites=true&w=majority&appName=merncluster`;
-const promiseObj=mongoose.connect(dburl)
-promiseObj
-.then((res)=>{
-    console.log("connected to database")
-})
-.catch((err)=>{
-    console.log("could not connect to database",err);
-})
+
 const schema=mongoose.Schema;
 const blogpostSchema=new schema({
     id:{type:Number,required:true},
